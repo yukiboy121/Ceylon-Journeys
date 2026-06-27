@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceylon Journeys – Sri Lanka Travel & Tours</title>
+  <meta name="description" content="Ceylon Journeys – Sri Lanka tour packages to Sigiriya, Kandy, Ella, Yala, Galle and more.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="preloader"><div class="loader-ring"></div></div>
+<div id="site-header"></div>
+
+<section class="hero-wrap">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide hero-slide" style="background-image:url('assets/images/sri.png')">
+        <div class="container hero-content">
+          <div class="hero-eyebrow" data-i18n="hero1.eyebrow">Explore Sri Lanka</div>
+          <h1 data-i18n="hero1.title">Discover the Pearl<br>of the Indian Ocean</h1>
+          <p data-i18n="hero1.text">Cultural heritage, tea country, golden beaches, and wildlife safaris – all in one island. We plan your trip from Colombo.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tours.html" class="btn-luxe" data-i18n="hero1.btn1">View Tour Packages</a>
+            <a href="contact.html" class="btn-outline-luxe" style="border-color:rgba(255,255,255,.45); color:#fff" data-i18n="hero1.btn2">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide" style="background-image:url('assets/images/tea.jpg')">
+        <div class="container hero-content">
+          <div class="hero-eyebrow" data-i18n="hero2.eyebrow">Hill Country</div>
+          <h1 data-i18n="hero2.title">Ella, Nuwara Eliya<br>& Tea Plantations</h1>
+          <p data-i18n="hero2.text">Scenic train rides, misty mountains, and cool climate escapes in the central highlands.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="destinations.html" class="btn-luxe" data-i18n="hero2.btn1">See Destinations</a>
+            <a href="tours.html" class="btn-outline-luxe" style="border-color:rgba(255,255,255,.45); color:#fff" data-i18n="hero2.btn2">Check Prices</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide hero-slide" style="background-image:url('assets/images/sriele.jpg')">
+        <div class="container hero-content">
+          <div class="hero-eyebrow" data-i18n="hero3.eyebrow">Wildlife & Coast</div>
+          <h1 data-i18n="hero3.title">Elephants, Yala<br>& Southern Beaches</h1>
+          <p data-i18n="hero3.text">Jeep safaris with wild elephants, Galle Fort, and whale watching on the south coast.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="tours.html" class="btn-luxe" data-i18n="hero3.btn1">Beach Packages</a>
+            <a href="contact.html" class="btn-outline-luxe" style="border-color:rgba(255,255,255,.45); color:#fff" data-i18n="hero3.btn2">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="hero-nav d-none d-md-flex">
+      <button class="hero-prev" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="hero-next" type="button"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<section class="search-glass">
+  <div class="container">
+    <div class="glass-card" data-aos="fade-up">
+      <h5 class="mb-3" data-i18n="index.search.title">Find a Sri Lanka Tour</h5>
+      <form class="row g-3 form-luxe" action="tours.html" method="get">
+        <div class="col-lg-4 col-md-6">
+          <label for="searchDest" data-i18n="index.search.dest">Destination</label>
+          <select id="searchDest" class="form-select" name="destination">
+            <option value="">Any destination</option>
+            <option>Sigiriya</option>
+            <option>Kandy</option>
+            <option>Ella</option>
+            <option>Yala</option>
+            <option>Galle</option>
+            <option>Nuwara Eliya</option>
+            <option>Pinnawala</option>
+          </select>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <label for="searchDate" data-i18n="index.search.date">Travel Date</label>
+          <input type="date" id="searchDate" class="form-control date-future" name="date">
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <label for="searchGuests" data-i18n="index.search.guests">Guests</label>
+          <select id="searchGuests" class="form-select" name="guests">
+            <option>2 Adults</option>
+            <option>1 Adult</option>
+            <option>Family (2+2)</option>
+            <option>Group (5+)</option>
+          </select>
+        </div>
+        <div class="col-lg-2 d-grid align-items-end">
+          <button type="submit" class="btn-luxe w-100"><i class="fa-solid fa-magnifying-glass me-2"></i><span data-i18n="index.search.btn">Search</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end flex-wrap mb-4">
+      <div>
+        <div class="section-subtitle" data-i18n="index.dest.sub">Island highlights</div>
+        <h2 class="section-title" data-i18n="index.dest.title">Popular Destinations</h2>
+        <p class="lead-soft" data-i18n="index.dest.lead">Top places visitors explore when travelling around Sri Lanka.</p>
+      </div>
+      <a href="destinations.html" class="btn-outline-luxe" data-i18n="index.dest.all">View All</a>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6" data-aos="fade-up">
+        <a href="destinations.html" class="dest-card d-block">
+          <img src="assets\images\sigiriya.jpg" alt="Sigiriya Rock Fortress Sri Lanka">
+          <div class="dest-info">
+            <h4>Sigiriya</h4>
+            <p>Cultural Triangle • From <span data-price-lkr="12500">Rs. 12,500</span></p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="80">
+        <a href="destinations.html" class="dest-card d-block">
+          <img src="assets/images/nine_arch.jpg" alt="Nine Arch Bridge Ella Sri Lanka">
+          <div class="dest-info">
+            <h4>Ella</h4>
+            <p>Hill Country • Scenic views</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="120">
+        <a href="destinations.html" class="dest-card d-block">
+          <img src="assets/images/ele.jpg" alt="Elephants in Yala Sri Lanka">
+          <div class="dest-info">
+            <h4>Yala & Elephants</h4>
+            <p>Wildlife • Safari & herds</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <div class="section-subtitle" data-i18n="index.tours.sub">Tour packages</div>
+      <h2 class="section-title" data-i18n="index.tours.title">Featured Sri Lanka Tours</h2>
+      <p class="lead-soft mx-auto" data-i18n="index.tours.lead">Fixed-price packages with transport, guide, and accommodation options.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up">
+        <div class="luxe-card">
+          <div class="card-img-wrap">
+            <img src="assets/images/sigiriya.jpg" alt="Sigiriya rock fortress Sri Lanka">
+            <div class="img-overlay"></div>
+            <span class="card-badge gold">Popular</span>
+          </div>
+          <div class="card-body-luxe">
+            <div class="card-meta"><span><i class="fa-regular fa-clock text-gold"></i> 3 Days</span><span>Cultural Triangle</span></div>
+            <h5 class="card-title-luxe">Sigiriya, Dambulla & Polonnaruwa</h5>
+            <p class="card-desc">Rock fortress, cave temple, and ancient city with private guide and AC vehicle.</p>
+            <div class="card-footer-luxe">
+              <div class="price" data-price-lkr="35000" data-i18n-suffix="price.person">Rs. 35,000 <small>/ person</small></div>
+              <a href="contact.html" class="btn-outline-luxe btn-sm" data-i18n="index.tours.enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="80">
+        <div class="luxe-card">
+          <div class="card-img-wrap">
+            <img src="assets/images/nine_arch.jpg" alt="Nine Arch Bridge Ella">
+            <div class="img-overlay"></div>
+          </div>
+          <div class="card-body-luxe">
+            <div class="card-meta"><span>4 Days</span><span>Hill Country</span></div>
+            <h5 class="card-title-luxe">Ella & Nuwara Eliya Tour</h5>
+            <p class="card-desc">Train ride, Nine Arch Bridge, tea factory visit, and Gregory Lake.</p>
+            <div class="card-footer-luxe">
+              <div class="price" data-price-lkr="65000" data-i18n-suffix="price.person">Rs. 65,000 <small>/ person</small></div>
+              <a href="contact.html" class="btn-outline-luxe btn-sm" data-i18n="index.tours.enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="140">
+        <div class="luxe-card">
+          <div class="card-img-wrap">
+            <img src="assets/images/ele.jpg" alt="Sri Lankan elephants safari">
+            <div class="img-overlay"></div>
+            <span class="card-badge teal">Wildlife</span>
+          </div>
+          <div class="card-body-luxe">
+            <div class="card-meta"><span>2 Days</span><span>Yala</span></div>
+            <h5 class="card-title-luxe">Yala National Park Safari</h5>
+            <p class="card-desc">Jeep safari, lodge stay, and chance to spot leopards and elephants.</p>
+            <div class="card-footer-luxe">
+              <div class="price" data-price-lkr="42000" data-i18n-suffix="price.person">Rs. 42,000 <small>/ person</small></div>
+              <a href="contact.html" class="btn-outline-luxe btn-sm" data-i18n="index.tours.enquire">Enquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="tours.html" class="btn-dark-luxe" data-i18n="index.tours.all">See All Tours</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-6 col-lg-3"><div class="stat-box"><div class="stat-number"><span data-count="1200">0</span>+</div><div class="stat-label" data-i18n="index.stat.trips">Local Trips</div></div></div>
+      <div class="col-6 col-lg-3"><div class="stat-box"><div class="stat-number"><span data-count="18">0</span></div><div class="stat-label" data-i18n="index.stat.dest">Sri Lanka Destinations</div></div></div>
+      <div class="col-6 col-lg-3"><div class="stat-box"><div class="stat-number"><span data-count="35">0</span></div><div class="stat-label" data-i18n="index.stat.packages">Tour Packages</div></div></div>
+      <div class="col-6 col-lg-3"><div class="stat-box"><div class="stat-number"><span data-count="8">0</span></div><div class="stat-label" data-i18n="index.stat.years">Years in Colombo</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-subtitle" data-i18n="index.culture.sub">Culture & wildlife</div>
+      <h2 class="section-title" data-i18n="index.culture.title">Experience Sri Lanka</h2>
+      <p class="lead-soft mx-auto" data-i18n="index.culture.lead">Elephants, ancient festivals, and traditions you can add to your itinerary.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="culture-card">
+          <img src="assets/images/ele2.jpg" alt="Wild elephants Sri Lanka">
+          <div class="culture-body">
+            <h5 data-i18n="culture.elephants">Wild Elephants</h5>
+            <p class="small muted mb-0" data-i18n="culture.elephants.desc">See herds at Minneriya, Udawalawe, or Pinnawala on our safari and day tours.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="culture-card">
+          <img src="assets/images/kandy1.jpg" alt="Kandy Esala Perahera elephants">
+          <div class="culture-body">
+            <h5 data-i18n="culture.perahera">Kandy Esala Perahera</h5>
+            <p class="small muted mb-0" data-i18n="culture.perahera.desc">World-famous procession with dancers, drummers, and decorated elephants each July–August.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="culture-card">
+          <img src="assets/images/kandy2.jpg" alt="Kandyan traditional dance Sri Lanka">
+          <div class="culture-body">
+            <h5 data-i18n="culture.dance">Kandyan Dance</h5>
+            <p class="small muted mb-0" data-i18n="culture.dance.desc">Traditional fire dance and drum performances at cultural centres in Kandy.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="culture-card">
+          <img src="assets/images/vesak.jpg" alt="Vesak lanterns Sri Lanka">
+          <div class="culture-body">
+            <h5 data-i18n="culture.vesak">Vesak Festival</h5>
+            <p class="small muted mb-0" data-i18n="culture.vesak.desc">Lantern displays and temple visits during Sri Lanka's main Buddhist festival in May.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="text-center mb-5">
+      <div class="section-subtitle" data-i18n="index.why.sub">Why travel with us</div>
+      <h2 class="section-title" data-i18n="index.why.title">Local Sri Lanka Experts</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="why-card"><div class="why-icon"><i class="fa-solid fa-van-shuttle"></i></div><h5>Island-wide Transport</h5><p class="muted small mb-0">AC cars, vans, and coaches with experienced drivers who know Sri Lankan roads.</p></div></div>
+      <div class="col-md-4"><div class="why-card"><div class="why-icon"><i class="fa-solid fa-user-tie"></i></div><h5>Licensed Guides</h5><p class="muted small mb-0">English-speaking chauffeur guides for cultural sites, safaris, and city tours.</p></div></div>
+      <div class="col-md-4"><div class="why-card"><div class="why-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div><h5>LKR Pricing</h5><p class="muted small mb-0">Clear prices in Sri Lankan Rupees. Pay via bank transfer, card, or at our Colombo office.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="mb-4">
+      <div class="section-subtitle" data-i18n="index.reviews.sub">Reviews</div>
+      <h2 class="section-title" data-i18n="index.reviews.title">What Travellers Say</h2>
+    </div>
+    <div class="swiper testi-swiper">
+      <div class="swiper-wrapper pb-4">
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Sigiriya and Polonnaruwa tour was well organised. Our driver knew all the best photo spots and lunch places."</p>
+            <div class="testi-foot"><img class="testi-avatar" src="https://i.pravatar.cc/100?img=32" alt=""><div><strong>Nimali Perera</strong><div class="muted small">Colombo</div></div></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ella train journey was the highlight of our trip. Ceylon Journeys booked everything including the hotel near Nine Arch Bridge."</p>
+            <div class="testi-foot"><img class="testi-avatar" src="https://i.pravatar.cc/100?img=12" alt=""><div><strong>Kasun Jayawardena</strong><div class="muted small">Kandy</div></div></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars">★★★★☆</div>
+            <p>"Yala safari was brilliant – we saw elephants and a leopard! Would recommend going early in the morning."</p>
+            <div class="testi-foot"><img class="testi-avatar" src="https://i.pravatar.cc/100?img=5" alt=""><div><strong>The Fernando Family</strong><div class="muted small">Galle</div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination testi-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="newsletter-band">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h3 class="mb-2" data-i18n="index.cta.title">Plan your Sri Lanka holiday</h3>
+          <p class="mb-0" data-i18n="index.cta.lead">Tell us your dates and budget. We create custom itineraries for families, couples, and groups.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end">
+          <a href="contact.html" class="btn-luxe" data-i18n="index.cta.btn">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

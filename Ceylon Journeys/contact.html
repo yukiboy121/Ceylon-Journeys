@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Ceylon Journeys</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="preloader"><div class="loader-ring"></div></div>
+<div id="site-header"></div>
+
+<section class="breadcrumb-luxe">
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Contact</li>
+      </ol>
+    </nav>
+    <h1>Contact Us</h1>
+    <p class="lead-soft">Colombo head office and Kandy branch. Call, WhatsApp, or send a message – we reply within one working day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-7">
+        <div class="sidebar-box">
+          <h5 class="mb-3">Send a Message</h5>
+          <div class="alert alert-success form-success d-none" role="alert">
+            <i class="fa-solid fa-circle-check me-1"></i> Your message was sent. We will contact you soon.
+          </div>
+          <form id="contactForm" class="form-luxe needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="contactName">Full Name</label>
+                <input type="text" id="contactName" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label for="contactEmail">Email</label>
+                <input type="email" id="contactEmail" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label for="contactPhone">Phone</label>
+                <input type="tel" id="contactPhone" class="form-control" placeholder="07X XXX XXXX">
+              </div>
+              <div class="col-md-6">
+                <label for="contactDest">Destination</label>
+                <select id="contactDest" class="form-select">
+                  <option>Sigiriya / Cultural Triangle</option>
+                  <option>Kandy</option>
+                  <option>Ella / Hill Country</option>
+                  <option>Yala Safari</option>
+                  <option>Galle / South Coast</option>
+                  <option>Trincomalee / East Coast</option>
+                  <option>Full Island Tour</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="contactMsg">Message</label>
+                <textarea id="contactMsg" class="form-control" rows="5" placeholder="Travel dates, number of people, budget..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-luxe">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="sidebar-box">
+          <h6>Colombo Head Office</h6>
+          <p class="small muted mb-2">42 Galle Road, Colombo 03<br>Sri Lanka</p>
+          <p class="small mb-1"><i class="fa-solid fa-phone text-gold me-2"></i>+94 11 234 5678</p>
+          <p class="small mb-3"><i class="fa-regular fa-envelope text-gold me-2"></i>info@ceylonjourneys.lk</p>
+          <a href="tel:+94112345678" class="btn-dark-luxe btn-sm w-100 mb-2"><i class="fa-solid fa-phone me-2"></i>Call Now</a>
+          <a href="https://wa.me/94112345678" class="btn-outline-luxe btn-sm w-100" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a>
+        </div>
+        <div class="sidebar-box">
+          <h6>Kandy Branch</h6>
+          <p class="small muted mb-1">47 Dalada Veediya, Kandy</p>
+          <p class="small mb-0"><i class="fa-solid fa-phone text-gold me-2"></i>+94 81 222 3344</p>
+        </div>
+        <div class="sidebar-box">
+          <h6>Opening Hours</h6>
+          <p class="small mb-0">Monday – Friday: 9:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 1:00 PM<br>Sunday: Closed</p>
+        </div>
+        <div class="sidebar-box">
+          <h6>Find Us</h6>
+          <iframe class="map-embed" style="height:200px; margin-top:0" title="Office location map" src="https://www.google.com/maps?q=Galle+Road+Colombo&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
